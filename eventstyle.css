@@ -21,6 +21,7 @@ header {
   display: flex;
   flex-direction: column;
   background-image: url("eventImg/bg2.jpg");
+  background-attachment: fixed;
   color: aqua;
   justify-content: space-around;
   align-items: center;
@@ -32,6 +33,11 @@ header {
   border-radius: 1em;
   width: 4em;
   text-align: center;
+  transition: all 1s step-start;
+}
+.btn1:hover {
+  transform: scale(1.1);
+  background-color: #f89f3a;
 }
 #Hmain {
   height: 80%;
@@ -107,9 +113,14 @@ header {
   font-family: "Roboto", sans-serif;
   background-color: rgb(248, 216, 204);
 }
+.text_containe_heading {
+  font-size: 2.3rem;
+  text-align: center;
+}
 .text_container {
   /*background-color: rgb(183, 193, 202);*/
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: lighter;
   text-align: center;
   padding: 40px;
 }
