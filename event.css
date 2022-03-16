@@ -1,16 +1,18 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  font-style: none;
-}
 :root {
   --primary-color: #ffffff;
   --secondary-color: #f89f3a;
   --max-width: 1100px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
-  font: normal 1rem/1.5 "Arial", sans-serif;
+  font: normal 1rem/1.5 'Arial', sans-serif;
   background: var(--primary-color);
   color: rgb(0, 0, 0);
   overflow-x: hidden;
@@ -20,7 +22,7 @@ header {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  background-image: url("eventImg/bg2.jpg");
+  background-image: url('eventImg/bg2.jpg');
   background-attachment: fixed;
   color: aqua;
   justify-content: space-around;
@@ -108,31 +110,26 @@ header {
 
 /*/////////////////////////////////////////////////////////////The second section styles//////////////////////////////////////////////////////*/
 .main_container {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Roboto", sans-serif;
-  background-color: rgb(248, 216, 204);
+  margin: 0;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #010101;
+  color: #e2e5e8;
 }
 .text_containe_heading {
   font-size: 2.3rem;
   text-align: center;
 }
 .text_container {
-  /*background-color: rgb(183, 193, 202);*/
   font-size: 20px;
   font-weight: lighter;
   text-align: center;
-  padding: 40px;
 }
-/*.pitching_container{
-    align-items: ;
-    margin: 20px;8 */
-/* } */
+
 .icon_container {
-  margin: 20px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  padding: 30px;
   justify-content: space-around;
 }
 
@@ -167,13 +164,17 @@ header {
 }
 
 /*////////////////////////////////////////////////////////////////TImeLine And Footer/////////////////////////////////////////////////////////////*/
+#timeline,
+#timeline ul {
+  background-color: #e2e5e8;
+}
+
 #timeline h1 {
   font-size: 2.3rem;
   text-align: center;
 }
 
 #timeline ul {
-  background: var(--primary-color);
   padding: 50px 0;
 }
 
@@ -203,19 +204,19 @@ header {
 
 /* Right Side */
 #timeline ul li:nth-child(odd) div {
-  left: 40px;
+  left: 50px;
   transform: translate(200px, 0);
 }
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
-  left: -290px;
+  left: -280px;
   transform: translate(-200px, 0);
 }
 
 /* Dots */
 #timeline ul li:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -229,7 +230,7 @@ header {
 
 /* Arrows Base */
 #timeline div:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 30px;
   width: 0;
@@ -293,12 +294,10 @@ header {
 }
 
 footer {
-  height: 20vh;
   width: 100vw;
   margin-bottom: 0px;
-  padding-top: 7vh;
-  margin-top: 50px;
-  background-color: #1f1f1f;
+  padding: 2rem;
+  background-color: #010101;
 }
 .copyright {
   font-size: 1.3rem;

@@ -39,64 +39,108 @@
 
   <body>
     <!-- Header -->
-    <header>
-      <ul class="navArea">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Association</a></li>
-        <li><a href="#">Speaker</a></li>
-        <li><a href="#">Team</a></li>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-links">Home</a></li>
+        <li><a href="#about" class="nav-links">About</a></li>
+        <li><a href="#events" class="nav-links">Events</a></li>
+        <li><a href="#speaker" class="nav-links">Speakers</a></li>
+        <li><a href="#comedy" class="nav-links">Comedy Night</a></li>
+        <li><a href="#team" class="nav-links">Team</a></li>
+        <li><a href="#sponsors" class="nav-links">Sponsors</a></li>
+        <li><a href="#footer" class="nav-links">Contact</a></li>
       </ul>
-      <a href="#" class="btn-area">Contact Us</a>
-    </header>
+    </nav>
+
+    <div class="header section" id="home"></div>
 
     <!-- About Us -->
-    <section class="about-us" id="esum">
+    <section class="about-us section" id="about">
+      <h1 class="accent-text">What is ESummit?</h1>
       <div class="about-us-wrapper">
-        <iframe class="video" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  type="text/html"
-          src="https://www.youtube.com/embed/G1yTy6-NhC8?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0.1&end=0&origin=https://youtubeembedcode.com">
-          <div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode nl</a></small></div>
-          <div><small><a href="http://add-link-exchange.com">add-link-Exchange</a></small></div>
-          <div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small></div>
-          <div><small><a href="http://add-link-exchange.com">w://add-link-exchange.com</a></small></div>
+        <iframe
+          data-aos="fade-right"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+          class="video"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          type="text/html"
+          src="https://www.youtube.com/embed/G1yTy6-NhC8?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0.1&end=0&origin=https://youtubeembedcode.com"
+        >
+          <div>
+            <small
+              ><a href="https://youtubeembedcode.com/nl/"
+                >youtubeembedcode nl</a
+              ></small
+            >
+          </div>
+          <div>
+            <small
+              ><a href="http://add-link-exchange.com"
+                >add-link-Exchange</a
+              ></small
+            >
+          </div>
+          <div>
+            <small
+              ><a href="https://youtubeembedcode.com/de/"
+                >youtubeembedcode.com/de/</a
+              ></small
+            >
+          </div>
+          <div>
+            <small
+              ><a href="http://add-link-exchange.com"
+                >w://add-link-exchange.com</a
+              ></small
+            >
+          </div>
         </iframe>
 
-
-
-        <div class="our-info-wrapper" id="section">
-          <h1 class="accent-text">What is ESummit ?</h1>
-          <p class="info" style="font-size: 24px;">
-            Entrepreneurship Summit is the brainchild of E-Cell, NSUT. Aiming
-            at inculcation and development the very spirit of entreneurship,
-            eCell NSUT comes up with its annual affair to stir an essence of
-            teamwork and synergy in the masses. We believe that, for the
-            students to develop in an all around manner, it becomes absolutely
-            imperative to concoct them for the competitive corporate world.
+        <div
+          class="our-info-wrapper"
+          id="section"
+          data-aos="fade-left"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <p class="info" style="font-size: 20px">
+            This April sees us return with our annual Entrepreneurship Summit, a
+            two-day conclave all about entrepreneurship and propagating its idea
+            further into today&apos;s youth that is already keen to innovate for
+            the greater good. Since its advent, E-Summit has been an epicentre
+            of eminence embodied in ideas as relevant as the sun.<br /><br />It
+            has always been achieved by events that resonate deeply with
+            participants and provide them with a platform to be vocal about
+            quandaries they feel need due addressal. This time around, we
+            provide them a pedestal in the form of eight events intricately
+            constructed to test their wit and even provide them with some
+            much-needed relief.
           </p>
- <!--          <button type="submit" class="register-button">
-            <a href="../index.html"
-              style="text-decoration: none; color: inherit; text-align: left; float: left !important;">Go to main
-              site</a>
-          </button> -->
 
-              <div class="button_base b07_3d_double_roll">
-        <div>Go to main site</div>
-        <div>to know more</div>
-        <div>Go to main site</div>
-        <div>to know more</div>
-    </div>
-
+          <div class="button_base b07_3d_double_roll">
+            <div>Go to main site</div>
+            <div>to know more</div>
+            <div>Go to main site</div>
+            <div>to know more</div>
+          </div>
         </div>
       </div>
-
     </section>
 
     <!-- Events -->
-    <section id="events">
+    <section id="events" class="section">
       <h2 class="text-primary">Event Series</h2>
       <div class="event-cards">
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -111,7 +155,12 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -126,7 +175,12 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -141,7 +195,12 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -156,7 +215,12 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -171,52 +235,12 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="./img/event.jpg" alt="" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda rem iusto ullam maxime eveniet harum magni vitae eos
-                nihil quo?
-              </p>
-              <a href="#" class="item-text-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="./img/event.jpg" alt="" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda rem iusto ullam maxime eveniet harum magni vitae eos
-                nihil quo?
-              </p>
-              <a href="#" class="item-text-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="./img/event.jpg" alt="" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda rem iusto ullam maxime eveniet harum magni vitae eos
-                nihil quo?
-              </p>
-              <a href="#" class="item-text-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
+        <div
+          class="item"
+          data-aos="flip-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
           <div class="item-image">
             <img src="./img/event.jpg" alt="" />
           </div>
@@ -235,19 +259,144 @@
     </section>
 
     <!-- Speaker Area -->
-    <section class="speaker">
+    <section class="speaker section" id="speaker">
       <h2 class="speaker-heading">Our Speakers</h2>
       <div id="speaker-content" class="speaker-content">
+        <div class="speaker-item">
+          <div data-aos="fade-left" data-aos-duration="800" class="speaker-img">
+            <img src="./img/1.jpeg" alt="Speaker" />
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="speaker-text"
+          >
+            <h3>Lorem Ipsum</h3>
+            <span>Lorem, ipsum.</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              omnis quo laboriosam ullam impedit adipisci ratione repellendus
+              incidunt nobis excepturi!
+            </p>
+          </div>
+        </div>
+        <div class="speaker-item">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="speaker-img"
+          >
+            <img src="./img/1.jpeg" alt="Speaker" />
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            class="speaker-text"
+          >
+            <h3>Lorem Ipsum</h3>
+            <span>Lorem, ipsum.</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              omnis quo laboriosam ullam impedit adipisci ratione repellendus
+              incidunt nobis excepturi!
+            </p>
+          </div>
+        </div>
+        <div class="speaker-item">
+          <div data-aos="fade-left" data-aos-duration="800" class="speaker-img">
+            <img src="./img/1.jpeg" alt="Speaker" />
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="speaker-text"
+          >
+            <h3>Lorem Ipsum</h3>
+            <span>Lorem, ipsum.</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              omnis quo laboriosam ullam impedit adipisci ratione repellendus
+              incidunt nobis excepturi!
+            </p>
+          </div>
+        </div>
+        <div class="speaker-item">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="speaker-img"
+          >
+            <img src="./img/1.jpeg" alt="Speaker" />
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            class="speaker-text"
+          >
+            <h3>Lorem Ipsum</h3>
+            <span>Lorem, ipsum.</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              omnis quo laboriosam ullam impedit adipisci ratione repellendus
+              incidunt nobis excepturi!
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Comedy Night -->
+    <div class="main-container section" id="comedy">
+      <div class="title-container">
+        <div id="comedy-title">Comedy</div>
+        <div id="night-title">Night</div>
+      </div>
+
+      <div class="secondary-container">
+        <img
+          src="./img/demo.avif"
+          alt="photo"
+          id="photo"
+          data-aos="fade-left"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        />
+
+        <div
+          class="tertiary-container"
+          data-aos="fade-right"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <div class="subheading">Sub-Heading dummy text</div>
+          <div class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+            vel natus numquam ipsa dolores, eaque consectetur debitis est vero,
+            itaque deleniti architecto dolorum. Cupiditate minima reprehenderit
+            quidem voluptates deleniti, in iste maxime porro obcaecati odio,
+            quasi eos qui alias modi ducimus a officiis dolor nam assumenda
+            nulla! Perspiciatis, corporis provident?<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            corrupti possimus quod consequatur quae omnis consequuntur unde sunt
+            numquam soluta?
+          </div>
+
+          <div class="timing-container">
+            <div class="timing-1">Sunday, 3 April 2022</div>
+            <div class="timing-2">Main Auditorium</div>
+            <div class="timing-2">Timings: 6:30pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Team -->
-    <section class="team">
+    <section id="team" class="team section">
       <h1 class="team_head"><span style="color: #fff">Our</span> Team</h1>
       <div id="owl-demo" class="owl-carousel owl-theme FadeScript">
         <!-- item-1 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -277,7 +426,7 @@
         </div>
         <!-- item-2 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -307,7 +456,7 @@
         </div>
         <!-- item-3 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -337,7 +486,7 @@
         </div>
         <!-- item-4 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -367,7 +516,7 @@
         </div>
         <!-- item-5 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -397,7 +546,7 @@
         </div>
         <!-- item-6 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -427,7 +576,7 @@
         </div>
         <!-- item-7 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -457,7 +606,7 @@
         </div>
         <!-- item-8 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -487,7 +636,7 @@
         </div>
         <!-- item-9 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -517,7 +666,7 @@
         </div>
         <!-- item-10 -->
         <div class="item_owl">
-          <img src="img/team/akshay.jpg" alt="North-East India" class="port" />
+          <img src="img/1.jpeg" alt="North-East India" class="port" />
           <div class="overlay">
             <h1 class="text">Paras Seth</h1>
             <div class="middle1">
@@ -548,8 +697,131 @@
       </div>
     </section>
 
+    <!-------SPONSOR--------->
+    <div class="sponsor-container section" id="sponsors">
+      <h1>SPONSORS</h1>
+      <div class="sponsors">
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+
+        <div
+          class="gallery"
+          data-aos="slide-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in"
+        >
+          <img class="image__img" src="./img/1.png" alt="sponsor" />
+          <div class="overlay">
+            <div class="title">SPONSOR NAME</div>
+            <p class="description">Media Partner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
-    <footer id="footer">
+    <footer id="footer" class="section">
       <div class="footer-head">
         <div class="footer-logo">
           <img src="./img/logo.png" alt="ECELL-NSUT" />
@@ -618,7 +890,7 @@
           </div>
         </div>
         <div class="copyright text-primary">
-          Copyright &copy; 2020 All Rights Reserved by eCellNSUT.
+          Copyright &copy; 2022 All Rights Reserved by eCellNSUT.
         </div>
       </div>
     </footer>
