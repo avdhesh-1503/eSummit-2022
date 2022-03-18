@@ -43,9 +43,7 @@ $('.navbar a, .nav-link').on('click', function (event) {
 
   Array.prototype.forEach.call(section, function (e) {
     sections[e.id] = e.offsetTop;
-    console.log(e, e.offsetTop);
   });
-  console.log(sections);
 
   window.onscroll = function () {
     var scrollPosition =

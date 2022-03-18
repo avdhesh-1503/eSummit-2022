@@ -1,26 +1,6 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("Hnav");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-
-
 const items = document.querySelectorAll('#timeline li');
 
-const isInViewport = el => {
+const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
@@ -32,13 +12,22 @@ const isInViewport = el => {
 };
 
 const run = () =>
-  items.forEach(item => {
+  items.forEach((item) => {
     if (isInViewport(item)) {
       item.classList.add('show');
     }
   });
 
+const register = () => {
+  document.querySelector('.warplanes').classList.add('clicked');
+  setTimeout(() => {
+    window.location.href =
+      'https://dare2compete.com/competition/unravel-the-case-study-competition-e-summit-22-netaji-subhas-university-of-technology-nsut-delhi-275136';
+  }, 750);
+};
+
 // Events
 window.addEventListener('load', run);
 window.addEventListener('resize', run);
 window.addEventListener('scroll', run);
+document.querySelector('.register-btn').addEventListener('click', register);

@@ -1,8 +1,5 @@
-:root {
-  --primary-color: #ffffff;
-  --secondary-color: #f89f3a;
-  --max-width: 1100px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -11,84 +8,23 @@
 }
 
 body {
-  min-height: 100vh;
-  font: normal 1rem/1.5 'Arial', sans-serif;
-  background: var(--primary-color);
-  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif !important;
   overflow-x: hidden;
 }
 
-header {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url('eventImg/bg2.jpg');
-  background-attachment: fixed;
-  color: aqua;
-  justify-content: space-around;
-  align-items: center;
-}
-.btn1 {
-  color: #bb3e03;
-  border: 2px solid #bb3e03;
-  padding: 0.8em;
-  border-radius: 1em;
-  width: 4em;
-  text-align: center;
-  transition: all 1s step-start;
-}
-.btn1:hover {
-  transform: scale(1.1);
-  background-color: #f89f3a;
-}
-#Hmain {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-#Himg {
-  width: 100%;
-}
-/*//////////////*/
-#Hnav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: #bb3e03;
-}
-
-/* Navbar links */
-#Hnav a {
-  float: left;
-  display: block;
-  color: white;
-  font-weight: 800;
-  text-align: center;
-  padding: 14px;
+a {
   text-decoration: none;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand' !important;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
 .next {
   width: 80px;
   position: fixed;
@@ -108,29 +44,130 @@ header {
   opacity: 1;
 }
 
-/*/////////////////////////////////////////////////////////////The second section styles//////////////////////////////////////////////////////*/
+/******************** Header ***********************/
+#header {
+  background-color: #e2e5e8;
+  background-image: url('./img/bg.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  position: relative;
+}
+
+.warplanes {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.warplanes.clicked {
+  animation: fly 1s ease-out forwards;
+}
+
+@keyframes fly {
+  from {
+    bottom: 3rem;
+    left: 3rem;
+    transform: scale(1.5);
+  }
+
+  to {
+    bottom: 100vh;
+    left: 50vw;
+    transform: scale(0.7);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  right: 35vw;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  background-color: #010101;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e68625;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 2vw;
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+.event-img {
+  position: absolute;
+  width: 60vw;
+  height: 60%;
+  top: 25%;
+  left: 30vw;
+}
+
+.planet {
+  position: absolute;
+  top: 1rem;
+  left: 20vw;
+  height: 150px;
+  width: 150px;
+  z-index: 10;
+}
+
+.register-btn {
+  position: absolute;
+  right: 35vw;
+  bottom: 10%;
+}
+
+/******************** About ************************/
 .main_container {
   margin: 0;
-  padding: 1.5rem;
-  font-family: 'Roboto', sans-serif;
+  padding: 0.8rem;
   background-color: #010101;
   color: #e2e5e8;
 }
 .text_containe_heading {
-  font-size: 2.3rem;
+  font-size: 3rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .text_container {
   font-size: 20px;
   font-weight: lighter;
   text-align: center;
+  padding: 0 4rem;
 }
 
 .icon_container {
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
 }
 
 .pitching_container {
@@ -163,19 +200,20 @@ header {
   font-weight: bold;
 }
 
-/*////////////////////////////////////////////////////////////////TImeLine And Footer/////////////////////////////////////////////////////////////*/
-#timeline,
-#timeline ul {
+/**************************** Timeline **********************/
+#timeline {
   background-color: #e2e5e8;
+  padding: 1rem 0;
 }
 
 #timeline h1 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   text-align: center;
 }
 
 #timeline ul {
-  padding: 50px 0;
+  background: #e2e5e8;
+  padding: 2rem 0;
 }
 
 /* Create Line */
@@ -195,7 +233,7 @@ header {
   width: 230px;
   height: 80px;
   padding: 1rem;
-  background: var(--secondary-color);
+  background: #e68625;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -242,14 +280,14 @@ header {
 #timeline ul li:nth-child(odd) div:before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--secondary-color) transparent transparent;
+  border-color: transparent #e68625 transparent transparent;
 }
 
 /* Left Side Arrows */
 #timeline ul li:nth-child(even) div:before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--secondary-color);
+  border-color: transparent transparent transparent #e68625;
 }
 
 /* Show Boxes */
@@ -260,7 +298,7 @@ header {
 }
 
 #timeline ul li.show:after {
-  background: var(--secondary-color);
+  background: #e68625;
 }
 
 @media (max-width: 900px) {
@@ -289,15 +327,15 @@ header {
   #timeline ul li:nth-child(even) div:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent var(--secondary-color) transparent transparent;
+    border-color: transparent #e68625 transparent transparent;
   }
 }
 
 footer {
   width: 100vw;
   margin-bottom: 0px;
-  padding: 2rem;
-  background-color: #010101;
+  background-color: #1f1f1f;
+  padding: 2rem 0;
 }
 .copyright {
   font-size: 1.3rem;
