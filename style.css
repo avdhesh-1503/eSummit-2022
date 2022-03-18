@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Quicksand' !important;
+  font-family: 'Quicksand';
 }
 
 .text-primary {
@@ -751,7 +751,9 @@ h6 {
 
 .sponsors {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
 }
 
 .gallery {
@@ -759,8 +761,8 @@ h6 {
   z-index: 0;
   width: 20vw;
   margin-top: 1rem;
-  margin-left: 10%;
-  float: left;
+  /* margin-left: 10%; */
+  /* float: left; */
   border-radius: 20px;
 }
 
