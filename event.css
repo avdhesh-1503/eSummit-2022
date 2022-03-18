@@ -125,10 +125,24 @@ h6 {
 
 .event-img {
   position: absolute;
-  width: 60vw;
-  height: 60%;
+  width: 59vw;
+  height: 55%;
   top: 25%;
   left: 30vw;
+}
+.event-img-bidshot {
+  position: absolute;
+  width: 38vw;
+  height: 52%;
+  top: 28%;
+  left: 40vw;
+}
+.event-img-investopreneur{
+  position: absolute;
+  width: 50vw;
+  height: 52%;
+  top: 22%;
+  left: 35vw;
 }
 
 .planet {
@@ -145,6 +159,7 @@ h6 {
   right: 35vw;
   bottom: 10%;
 }
+
 
 /******************** About ************************/
 .main_container {
