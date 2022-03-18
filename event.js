@@ -26,8 +26,26 @@ const register = () => {
   }, 750);
 };
 
+const register_bidshot = () => {
+  document.querySelector('.warplanes').classList.add('clicked');
+  setTimeout(() => {
+    window.location.href =
+      'https://dare2compete.com/competition/the-bid-shot-scoop-it-to-win-it-e-summit-22-netaji-subhas-university-of-technology-nsut-delhi-275130';
+  }, 750);
+};
+
+// const register_investopreneur = () => {
+//   document.querySelector('.warplanes').classList.add('clicked');
+//   setTimeout(() => {
+//     window.location.href =
+//       'https://dare2compete.com/competition/investopreneur-bid-it-to-win-it-e-summit-22-netaji-subhas-university-of-technology-nsut-delhi-275139';
+//   }, 750);
+// };
+
 // Events
 window.addEventListener('load', run);
 window.addEventListener('resize', run);
 window.addEventListener('scroll', run);
 document.querySelector('.register-btn').addEventListener('click', register);
+document.querySelector('#register-bidshot').addEventListener('click', register_bidshot);
+// document.querySelector('#register-investopreneur').addEventListener('click', register_investopreneur);
